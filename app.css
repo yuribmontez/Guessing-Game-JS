@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
 }
 body {
     height: 100vh;
@@ -43,7 +44,6 @@ body {
     border-radius: 5px;
     display: grid;
     justify-items: center;
-    font-family: 'Poppins',sans-serif;
 }
 h3{
     font-size: 20px;
@@ -64,6 +64,7 @@ input[type="number"]{
         rgba(255, 255, 255, 0.2),
         rgba(255, 255, 255, 0.05)
     );;
+
 }
 button{
     width: 160px;
@@ -79,4 +80,9 @@ button{
 }
 p{
     font-weight: 500;
+    font-size: large;
+}
+
+#again{
+    display: none;
 }
