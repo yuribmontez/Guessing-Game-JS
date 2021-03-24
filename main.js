@@ -6,7 +6,7 @@ var resposta = Math.floor(Math.random() * 100) + 0;
 var chutes = 7;
 var numerosChutados = [];
 var chutesGastos = 0;
-
+var acertou = false;
 function jogarNovamente() {
     location.reload();
 }
@@ -19,7 +19,7 @@ function jogar() {
         alert('Por favor escolha um número entre 0 e 100.')
     } else {
         numerosChutados.push(chute);
-        while (chutes >= 1) {
+        while (chutes >= 0) {
             if (chute < resposta) {
                 msg1.textContent = 'Esse é seu melhor chute? Tente um número maior.';
                 msg2.textContent = 'Nº de chutes: ' + chutes;
@@ -33,6 +33,7 @@ function jogar() {
                 break;
             }
             else if (chute == resposta) {
+                acertou = true;
                 msg1.textContent = 'Boaaaaaaaa, você acertou. Como você conseguiu? :O';
                 msg2.textContent = 'A resposta era: ' + resposta;
                 msg3.textContent = 'Você acertou em: ' + chutesGastos + ' chutes';
@@ -42,7 +43,7 @@ function jogar() {
                 break;
             }
         }
-        if (chutes == 0) {
+        if (!acertou && chutes == 0) {
             msg1.textContent = 'Erroooooooou feio, errooooooooou rude. O número era: ' + resposta;
             msg2.textContent = '';
             msg3.textContent = 'Números chutados: ' + numerosChutados;
@@ -50,12 +51,9 @@ function jogar() {
             document.getElementById('botao').style.display = 'none';
             document.getElementById('botao2').style.display = 'inline';
         }
-        if (chute == resposta) {
-            msg1.textContent = 'Boaaaaaaaa, você acertou. Como você conseguiu? :O';
-            msg2.textContent = 'A resposta era: ' + resposta;
-            msg3.textContent = 'Você acertou em: ' + chutesGastos + ' chutes';
-            document.getElementById('botao').style.display = 'none';
+        if (chutes == 0) {
             document.getElementById('chute').style.display = 'none';
+            document.getElementById('botao').style.display = 'none';
             document.getElementById('botao2').style.display = 'inline';
         }
     }
