@@ -12,7 +12,7 @@ function jogarNovamente() {
 }
 
 function jogar() {
-    var chute = document.getElementById('chute').value;
+    var chute = parseInt(document.getElementById('chute').value);
     chutes -= 1;
     chutesGastos += 1;
     if (chute < 0 || chute > 100) {
@@ -39,7 +39,6 @@ function jogar() {
                 document.getElementById('botao').style.display = 'none';
                 document.getElementById('chute').style.display = 'none';
                 document.getElementById('botao2').style.display = 'inline';
-
                 break;
             }
         }
@@ -62,5 +61,3 @@ function jogar() {
     }
 
 }
-
-
