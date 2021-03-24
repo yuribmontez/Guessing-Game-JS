@@ -12,7 +12,6 @@ function jogarNovamente() {
 }
 
 function jogar() {
-    alert(resposta);
     var chute = document.getElementById('chute').value;
     chutes -= 1;
     chutesGastos += 1;
