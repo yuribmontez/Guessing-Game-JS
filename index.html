@@ -7,24 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
-    <title>Jogo da Adivinhação</title>
+    <title>Guessing Game</title>
 </head>
 
 <body>
-
     <div class="container">
+        <h3>Bem vindo</h3>
         <h3>Escolhi um número entre 0-100</h3>
         <h3>Acha que consegue descobrir?</h3>
 
-        <input type="number" placeholder="Nº" id="chute"><br>
+        <input type="number" placeholder="Nº" id='chute'><br>
         <button onclick="jogar()" id='botao'>Chutar</button>
+        <button onclick='jogarNovamente()' id='botao2' style="display: none;">Jogar Novamente</button>
 
-        <p id="mensagem1">Número de chutes: 0</p>
-        <p id="mensagem2">Números chutados: </p>
-        <p id="mensagem3"></p>
+        <p id='mensagem1'>Número de chutes: 7 </p>
+        <p id='mensagem2'>Números chutados: </p>
+        <p id='mensagem3'></p>
     </div>
-
-    <script src="main.js"></script>
+    <script src='main.js'></script>
 </body>
 
 </html>
