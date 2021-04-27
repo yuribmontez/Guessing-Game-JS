@@ -1,7 +1,13 @@
-# Guessing-Game-JS
+# Sobre
 
-Jogo de Adivinhação feito durante a segunda edição da Imersão_Dev da Alura
+Este <a href="https://yuribmontez.github.io/Guessing-Game-JS/">jogo</a> foi criado usando JavaScript. Séra que você consegue advinhar o número? 🤔
 
-<a href='https://yuribmontez.github.io/Guessing-Game-JS/'>Github Page</a>
+<br>
 
-![guessing game](https://user-images.githubusercontent.com/77989191/112219111-598aef00-8c03-11eb-9ae2-5f1582774499.PNG)
+Este projeto foi criado durante a segunda edição da - Imersão_Dev - by [Alura](https://www.alura.com.br)
+
+
+![guessingGame](https://user-images.githubusercontent.com/77989191/116177512-4380ba80-a6ea-11eb-828d-7beecead0ea3.gif)
+
+
+
